@@ -1,0 +1,10 @@
+Implementation of Hashmap makes use of Hashcode() function as the first step in producing hash value for an object 
+being used as a key. And on the given program, Hashcode has not been overriden on Employee.Java
+
+@Override
+	public int hashCode() {
+		int x = 17;
+		x += 31*x+ name.hashCode();
+		x+= 31*x+ Integer.toString(salary).hashCode();
+		return x;
+	}

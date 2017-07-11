@@ -1,0 +1,11 @@
+Equals Method in Employee.java is not implemented correctly. 
+It is not overriding from the root Object class, instead creating new method with different signature.
+It should be corrected with the code below:-
+
+@Override
+	public boolean equals(Object ee) {
+		if(ee == null || ee.getClass() != this.getClass() )
+			return false;
+		Employee e = (Employee) ee;
+		return e.name.equals(name) && e.salary == salary;
+	} 
