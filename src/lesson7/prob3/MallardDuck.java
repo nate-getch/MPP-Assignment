@@ -1,0 +1,20 @@
+package lesson7.prob3;
+
+public class MallardDuck extends Duck implements FlyWithWings, Quack {
+
+	@Override
+	public void display() {
+		System.out.println("  display");
+	}
+
+	@Override
+	public void fly() {
+		FlyWithWings.super.fly();
+	}
+
+	@Override
+	public void quack() {
+		Quack.super.quack();
+	}
+
+}
