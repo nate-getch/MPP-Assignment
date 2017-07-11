@@ -1,6 +1,8 @@
 Implementation of Hashmap makes use of Hashcode() function as the first step in producing hash value for an object 
 being used as a key. And on the given program, Hashcode has not been overriden on Employee.Java
 
+Hashcode method should be overriden as the following:-
+
 @Override
 	public int hashCode() {
 		int x = 17;
