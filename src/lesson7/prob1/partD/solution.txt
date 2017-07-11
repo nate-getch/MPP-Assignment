@@ -1,4 +1,5 @@
 
 removeDuplicates method in EmployeeInfo.java sets the isVisited property of Employee class.
 
-Solution to overcome this issue by not changing the isVisited property. This problem illustrates importance of using immutable objects as keys in a hashtable.
+Solution to overcome this issue is by not changing the isVisited property. 
+This problem illustrates importance of using immutable objects as keys in a hashtable.
