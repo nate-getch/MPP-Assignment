@@ -3,7 +3,7 @@ package lesson10.prob3;
 import java.util.Arrays;
 import java.util.List;
 
-public class SumMain {
+public class SumMain  {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -14,11 +14,15 @@ public class SumMain {
 	}
 	
 	static double sum(List<? extends Number> items) {
-		double sum = 0.0;
+		/*double sum = 0.0;
 		for(Number t : items)
 			sum += t.doubleValue();
 		
-		return sum;	
+		return sum;	*/
+		
+		return items.stream()
+				.map(t->t.doubleValue())
+				.reduce(0.0, (a,b) -> a+b );
 	}
 	
 }

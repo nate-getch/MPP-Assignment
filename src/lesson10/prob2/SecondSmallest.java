@@ -24,8 +24,8 @@ public class SecondSmallest {
         System.out.println(datesecodmin);
 	}
 	
-	public static <T extends Comparable> T getSecondSmallest(List<T> items) {
-		Collections.sort((List<T>) items);
+	public static <T extends Comparable<? super T>> T getSecondSmallest(List<T> items) {
+		Collections.sort( items);
 		return items.get(1);		
 	}
 
